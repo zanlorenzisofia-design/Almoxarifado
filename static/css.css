@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ff0000;
+    background-color: #e8f0fc;
 }
 
 .form-control.me-2 {
@@ -19,27 +19,22 @@ body {
 .nav-link-animado:active {
     transform: scale(0.95); 
 }
-<<<<<<< HEAD
 
-.tabela-almoxarifado {
-    width: 100%;
-    border-collapse: collapse;         
-    background-color: #ffffff;         
-    border-radius: 8px;                 
-    overflow: hidden;                   
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+.borda-tabela, 
+.borda-tabela th, 
+.borda-tabela td {
+    background-color: #283674;
+    color: #ffffff;            
+    border-color: #101a41; 
 }
 
-.tabela-almoxarifado th {
-    background-color: #222;
-    color: white;
+.borda-tabela.table-hover tbody tr:hover td,
+.borda-tabela.table-hover tbody tr:hover th {
+    background-color: #1a2347; 
+    color: #ffffff;
 }
 
-.tabela-almoxarifado th,
-.tabela-almoxarifado td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+.table-striped tbody tr:nth-child(odd) > * {
+    background-color: #1b2a58 !important;
+    box-shadow: none;
 }
-=======
->>>>>>> 4f35807ea0d35500e07466692e4bb50e708401f5

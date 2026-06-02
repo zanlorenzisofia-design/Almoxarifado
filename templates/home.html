@@ -7,10 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192A6B;">
@@ -19,7 +21,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="A">
-        <img src="senai.png" alt="Logo" width="130" height="75" class="logo">
+      <img src="{{ url_for('static', filename='senai.png') }}" alt="Logo" width="130" height="75" class="logo">
     </a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
@@ -36,14 +38,22 @@
     </div>
   </div>
 </nav>
-
-<table class="table table-bordered">
+<div class="container my-5 pb-5">
+    <div class="quadrado-animado">
+      <h1 class="display-4 fw-bold m-0 animar-titulo" style="color: #0C1332 !important;">Bem-Vindo ao Almoxarifado SENAI!</h1>
+    </div>
+    <hr class="my-4">
+  </div>
+<div class="d-flex justify-content-center my-5">e
+  <table class="table table-dark table-striped m-0 borda-tabela">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Qtde</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Foto</th>
     </tr>
   </thead>
   <tbody>
@@ -52,21 +62,27 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
+      <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>@fat</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>John</td>
       <td>Doe</td>
       <td>@social</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
     </tr>
   </tbody>
 </table>
+</div>
 </script>
 </body>
 </html>
