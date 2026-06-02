@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff0000;
+}
+
+.form-control.me-2 {
+    max-width: 220px; 
+}
+
+.nav-link-animado {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.nav-link-animado:hover {
+    transform: scale(1.15); 
+}
+
+.nav-link-animado:active {
+    transform: scale(0.95); 
+}
+<<<<<<< HEAD
+
+.tabela-almoxarifado {
+    width: 100%;
+    border-collapse: collapse;         
+    background-color: #ffffff;         
+    border-radius: 8px;                 
+    overflow: hidden;                   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+.tabela-almoxarifado th {
+    background-color: #222;
+    color: white;
+}
+
+.tabela-almoxarifado th,
+.tabela-almoxarifado td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+=======
+>>>>>>> 4f35807ea0d35500e07466692e4bb50e708401f5
