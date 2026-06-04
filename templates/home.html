@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
 </head>
 <body>
+  <!-- A NAVBAR TERMINA AQUI 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192A6B;">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,52 +38,104 @@
       </ul>
     </div>
   </div>
-</nav>
-<div class="container my-5 pb-5">
-    <div class="quadrado-animado">
-      <h1 class="display-4 fw-bold m-0 animar-titulo" style="color: #0C1332 !important;">Bem-Vindo ao Almoxarifado SENAI!</h1>
-    </div>
-    <hr class="my-4">
-  </div>
-<div class="d-flex justify-content-center my-5">e
-  <table class="table table-dark table-striped m-0 borda-tabela">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nome</th>
-      <th scope="col">Qtde</th>
-      <th scope="col">Descrição</th>
-      <th scope="col">Categoria</th>
-      <th scope="col">Foto</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
-</table>
+</nav>-->
+<div class="barra-topo d-flex align-items-center justify-content-start" style="background: #ffffff ; background-color: white ; padding: 10px 20px ; border-bottom: 4px solid #ff6600; width: 100%;">
+   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: 1px solid #ccc; padding: 5px 10px; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+    <span class="d-flex align-items-center justify-content-center" style="font-size: 20px; line-height: 1; color: #333;">&#9776;</span>
+  </button>
+
+    <img src="{{ url_for('static', filename='senai.png') }}" alt="Logo Topo" style="width: 125px; margin-left: 10px;">
 </div>
-</script>
+
+  </div> <nav id="navlateral">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: 1px solid #ccc; padding: 5px 10px; border-radius: 5px; margin-right: 15px;"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+<div class="container-fluid my-5 px-5">
+    <div class="row">
+         
+        <div class="col-12 text-center"> 
+            <div class="quadrado-animado text-start"> 
+                <h1 class="display-5 fw-bold m-0 animar-titulo">
+                    Bem-Vindo ao<br>Almoxarifado SENAI!
+                </h1>
+            </div>
+            
+            <hr class="mx-auto my-5" style="width: 50%; border-top: 3px solid #ff6600; opacity: 1;">
+        </div>
+
+        <div class="col-12 mt-4">
+            <div class="table-responsive">
+                <table class="table table-dark table-striped m-0 borda-tabela shadow-sm" style="border-radius: 8px; overflow: hidden;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Qtde</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>@social</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-end mt-3">
+                <a href="/estoque" class="btn btn-primary px-4 shadow-sm" style="background-color: #0C1332; border-color: #0C1332; font-weight: 500;">
+                    Ver mais &rarr;
+                </a>
+            </div>
+      </div>
 </body>
 </html>

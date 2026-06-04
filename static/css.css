@@ -1,4 +1,4 @@
-body {
+ /* body {
     font-family: 'Poppins', sans-serif;
     background-color: #e8f0fc;
 }
@@ -18,8 +18,26 @@ body {
 
 .nav-link-animado:active {
     transform: scale(0.95); 
+}*/
+.animar-titulo {
+    color: #eff2ff !important;
+    line-height: 1.2;
+    display: inline-block;
+    animation: revelarTexto 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+@keyframes revelarTexto {
+    0% {
+        transform: translateY(40px); 
+        clip-path: inset(0px 0px 100% 0px); 
+    }
+    100% {
+        transform: translateY(0);    
+        clip-path: inset(0px 0px 0px 0px);   
+    }
+}
+
+ 
 .borda-tabela, 
 .borda-tabela th, 
 .borda-tabela td {
@@ -37,4 +55,70 @@ body {
 .table-striped tbody tr:nth-child(odd) > * {
     background-color: #1b2a58 !important;
     box-shadow: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #002A54; /* Azul Institucional */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. Barra de Topo */
+.barra-topo {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #FF8C00; /* Laranja */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+   
+    align-items: center;
+    gap: 30px; /* espaço entre logo e menu */
+}
+
+.barra-topo img {
+    height: 40px;
+}
+
+/* 3. Área de Centralização */
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#imagem-centralizada{
+    margin-left: 0%;
+    margin-right: auto;
+   scale: 1.200;
+        
+    }
+
+#cachorro {
+    position: relative;
+    left: 60px;
+}
+
+#justify {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#navlateral{
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }

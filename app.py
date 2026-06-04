@@ -3,7 +3,7 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/inicio')
 def home():
     return render_template('home.html')
 
